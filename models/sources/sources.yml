@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: mctv_core_directus
+    schema: mctv_core_directus
+    tables:
+      - name: content
+      - name: free_topups
+

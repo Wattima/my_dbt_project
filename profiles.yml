@@ -1,0 +1,13 @@
+my_profile:
+  target: dev
+  outputs:
+    dev:
+      type: mysql
+      host: 172.31.30.238
+      user: directus
+      password: Directus@1
+      port: 3306
+      dbname: mctv_core_directus    # Your destination database name
+      schema: mctv_core_directus  # MySQL treats schema and database as the same
+      threads: 4
+
