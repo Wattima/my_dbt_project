@@ -9,9 +9,8 @@ WITH raw_data AS (
   SELECT *
   FROM {{ source('mctv_core_directus', 'free_topups') }}
 )
-SELECT 
+SELECT
   topup_id,
-  SUBSTRING(reason_for_topup, 1, 1024) AS reason_for_topup,
-  other_columns
+  CAST(SUBSTRING(reason_for_topup, 1, 1024) AS VARCHAR(1024)) AS reason_for_topup
 FROM raw_data
 

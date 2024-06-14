@@ -9,9 +9,9 @@ WITH raw_data AS (
   SELECT *
   FROM {{ source('mctv_core_directus', 'content') }}
 )
-SELECT 
+SELECT
   id,
-  SUBSTRING(synopsis, 1, 1024) AS synopsis,
-  other_columns
+  CAST(SUBSTRING(synopsis, 1, 1024) AS VARCHAR(1024)) AS synopsis
 FROM raw_data
+
 
