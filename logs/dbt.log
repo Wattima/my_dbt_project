@@ -1,0 +1,130 @@
+[0m16:56:16.865524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d0c13b4310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d0c1c2ae00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d0c1c2ba00>]}
+
+
+============================== 16:56:16.933246 | d56629a5-3b70-4081-ab92-e01f47f6ef27 ==============================
+[0m16:56:16.933246 [info ] [MainThread]: Running with dbt=1.7.16
+[0m16:56:16.935657 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/daryl/airbyteHosted/my_dbt_project/logs', 'fail_fast': 'False', 'profiles_dir': 'profiles.yml', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug --profiles-dir profiles.yml', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:56:16.938520 [info ] [MainThread]: dbt version: 1.7.16
+[0m16:56:16.941887 [info ] [MainThread]: python version: 3.10.12
+[0m16:56:16.943754 [info ] [MainThread]: python path: /home/daryl/airbyteHosted/dbt-env/bin/python3
+[0m16:56:16.945514 [info ] [MainThread]: os info: Linux-6.5.0-35-generic-x86_64-with-glibc2.35
+[0m16:56:16.947346 [info ] [MainThread]: Using profiles dir at profiles.yml
+[0m16:56:16.949112 [info ] [MainThread]: Using profiles.yml file at profiles.yml/profiles.yml
+[0m16:56:16.950828 [info ] [MainThread]: Using dbt_project.yml file at /home/daryl/airbyteHosted/my_dbt_project/dbt_project.yml
+[0m16:56:16.967487 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m16:56:16.969617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd56629a5-3b70-4081-ab92-e01f47f6ef27', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d0bf79f970>]}
+[0m16:56:17.322187 [info ] [MainThread]: Configuration:
+[0m16:56:17.324220 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m16:56:17.325973 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:56:17.327805 [info ] [MainThread]: Required dependencies:
+[0m16:56:17.329623 [debug] [MainThread]: Executing "git --help"
+[0m16:56:17.337175 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:56:17.339866 [debug] [MainThread]: STDERR: "b''"
+[0m16:56:17.341650 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:56:17.343473 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m16:56:17.345371 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:56:17.347135 [info ] [MainThread]: dbt looked for a profiles.yml file in profiles.yml/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:56:17.433670 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.7606421, "process_user_time": 9.020134, "process_kernel_time": 0.256003, "process_mem_max_rss": "93168", "process_in_blocks": "72", "process_out_blocks": "16", "command_success": false}
+[0m16:56:17.436844 [debug] [MainThread]: Command `dbt debug` failed at 16:56:17.436056 after 0.76 seconds
+[0m16:56:17.439044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d0c13b4310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d0c0c2dc90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73d0c1c56d40>]}
+[0m16:56:17.442296 [debug] [MainThread]: Flushing usage events
+[0m16:57:42.091711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4fde18a650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4fde65e350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4fde5eb970>]}
+
+
+============================== 16:57:42.099712 | b5c1e256-a1a5-4c43-8a57-bac914a59718 ==============================
+[0m16:57:42.099712 [info ] [MainThread]: Running with dbt=1.7.16
+[0m16:57:42.101623 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/daryl/airbyteHosted/my_dbt_project/logs', 'profiles_dir': '.', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug --profiles-dir .', 'send_anonymous_usage_stats': 'True'}
+[0m16:57:42.103390 [info ] [MainThread]: dbt version: 1.7.16
+[0m16:57:42.104798 [info ] [MainThread]: python version: 3.10.12
+[0m16:57:42.106221 [info ] [MainThread]: python path: /home/daryl/airbyteHosted/dbt-env/bin/python3
+[0m16:57:42.107605 [info ] [MainThread]: os info: Linux-6.5.0-35-generic-x86_64-with-glibc2.35
+[0m16:57:42.319093 [info ] [MainThread]: Using profiles dir at .
+[0m16:57:42.320961 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m16:57:42.322586 [info ] [MainThread]: Using dbt_project.yml file at /home/daryl/airbyteHosted/my_dbt_project/dbt_project.yml
+[0m16:57:42.325054 [info ] [MainThread]: adapter type: mysql
+[0m16:57:42.327463 [info ] [MainThread]: adapter version: 1.7.0
+[0m16:57:42.337858 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m16:57:42.339954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'b5c1e256-a1a5-4c43-8a57-bac914a59718', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4fdbfc5000>]}
+[0m16:57:42.650327 [info ] [MainThread]: Configuration:
+[0m16:57:42.652352 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:57:42.654278 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:57:42.656055 [info ] [MainThread]: Required dependencies:
+[0m16:57:42.657820 [debug] [MainThread]: Executing "git --help"
+[0m16:57:42.666723 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:57:42.671590 [debug] [MainThread]: STDERR: "b''"
+[0m16:57:42.674031 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:57:42.677518 [info ] [MainThread]: Connection:
+[0m16:57:42.681345 [info ] [MainThread]:   server: 172.31.30.238
+[0m16:57:42.684198 [info ] [MainThread]:   unix_socket: None
+[0m16:57:42.688301 [info ] [MainThread]:   port: 3306
+[0m16:57:42.691591 [info ] [MainThread]:   database: None
+[0m16:57:42.694584 [info ] [MainThread]:   schema: mctv_core_directus
+[0m16:57:42.698160 [info ] [MainThread]:   user: directus
+[0m16:57:42.702790 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m16:57:42.708246 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m16:57:42.712390 [debug] [MainThread]: Using mysql connection "debug"
+[0m16:57:42.716622 [debug] [MainThread]: On debug: select 1 as id
+[0m16:57:42.720642 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:59:56.095758 [error] [MainThread]: Encountered an error:
+
+[0m16:59:56.114669 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 327, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on '172.31.30.238:3306' (110)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/cli/requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/cli/requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/cli/main.py", line 445, in debug
+    results = task.run()
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/task/debug.py", line 153, in run
+    connection_status = self.test_connection()
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/task/debug.py", line 472, in test_connection
+    connection_result = self.attempt_connection(self.profile)
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/task/debug.py", line 450, in attempt_connection
+    adapter.debug_query()
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 270, in debug_query
+    self.execute("select 1 as id")
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 310, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 138, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 79, in add_query
+    cursor = connection.handle.cursor()
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/contracts/connection.py", line 90, in handle
+    self._handle.resolve(self)
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/contracts/connection.py", line 114, in resolve
+    return self.opener(connection)
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/dbt/adapters/mysql/connections.py", line 105, in open
+    connection.handle = mysql.connector.connect(**kwargs)
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/mysql/connector/pooling.py", line 322, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 144, in __init__
+    self.connect(**kwargs)
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/mysql/connector/abstracts.py", line 1360, in connect
+    self._open_connection()
+  File "/home/daryl/airbyteHosted/dbt-env/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 327, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+KeyboardInterrupt
+
+[0m16:59:56.124671 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 134.18132, "process_user_time": 8.545551, "process_kernel_time": 0.328059, "process_mem_max_rss": "97980", "process_in_blocks": "928", "process_out_blocks": "40", "command_success": false}
+[0m16:59:56.131618 [debug] [MainThread]: Command `dbt debug` failed at 16:59:56.130023 after 134.19 seconds
+[0m16:59:56.135302 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:59:56.138075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4fde18a650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4fdc02b550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4fdc06f610>]}
+[0m16:59:56.140629 [debug] [MainThread]: Flushing usage events
